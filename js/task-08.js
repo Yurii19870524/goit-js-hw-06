@@ -11,8 +11,8 @@ function onSubmit(evt) {
     return alert('Будь ласка, заповніть усі поля!');
   } else {
     const dataForm = {
-      password: password.value,
-      email: email.value,
+      password: password.value.trim(),
+      email: email.value.trim(),
     };
     console.log(dataForm);
     evt.currentTarget.reset();
